@@ -34,6 +34,11 @@ jobs:
         directory-to-scan: MusicPlayerApp
         should-scan-archives: false
         output-filename: devskim-results-dotnet.sarif
+    - name: List Dir
+      run: ls -R
+        
+    - name: Format sarif
+      run: eslint --format sarif sample-example.js --output-file devskim-results-dotnet.sarif
 
     # - name: Upload Sarif
     #   uses: github/codeql-action/upload-sarif@v1
