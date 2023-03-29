@@ -3,7 +3,7 @@ name: "Code Scanning - DevSkim "
 on:
   push:
     branches:
-    - main
+    - testDevSkim
     # paths:
     # - DevSkim-DotNet/*
   # pull_request:
