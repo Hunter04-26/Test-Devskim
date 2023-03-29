@@ -29,7 +29,7 @@ jobs:
     - name: DevSkim
       uses: microsoft/DevSkim-Action@v1
       with:
-        directory-to-scan: MuicPlayerApp
+        directory-to-scan: MusicPlayerApp
         should-scan-archives: false
         output-filename: devskim-results-dotnet.sarif
 
