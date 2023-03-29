@@ -22,7 +22,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       # with:
       #   fetch-depth: 0
     
@@ -38,9 +38,9 @@ jobs:
     #   with:
     #     sarif_file: devskim-results-dotnet.sarif
 
-    # - name: Archive artifacts
-    #   uses: actions/upload-artifact@v2
-    #   with:
-    #     name: devskim-results-dotnet.sarif
-    #     path: |
-    #       devskim-results-dotnet.sarif
+    - name: Archive artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: devskim-results-dotnet.sarif
+        path: |
+          devskim-results-dotnet.sarif
