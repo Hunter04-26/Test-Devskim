@@ -33,10 +33,10 @@ jobs:
         should-scan-archives: false
         output-filename: devskim-results-dotnet.sarif
 
-    - name: Upload Sarif
-      uses: github/codeql-action/upload-sarif@v1
-      with:
-        sarif_file: devskim-results-dotnet.sarif
+    # - name: Upload Sarif
+    #   uses: github/codeql-action/upload-sarif@v1
+    #   with:
+    #     sarif_file: devskim-results-dotnet.sarif
 
     # - name: Archive artifacts
     #   uses: actions/upload-artifact@v2
